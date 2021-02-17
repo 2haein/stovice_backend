@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node -r esm src",
+    "start:dev": "nodemon --watch src/ -r esm src/index.js"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/2haein/stovice_backend.git"
@@ -16,5 +19,20 @@
   "bugs": {
     "url": "https://github.com/2haein/stovice_backend/issues"
   },
-  "homepage": "https://github.com/2haein/stovice_backend#readme"
+  "homepage": "https://github.com/2haein/stovice_backend#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "dotenv": "^8.2.0",
+    "eslint-config-prettier": "^7.2.0",
+    "esm": "^3.2.25",
+    "joi": "^17.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^10.0.0",
+    "mongoose": "^5.11.16"
+  },
+  "devDependencies": {
+    "eslint": "^7.20.0"
+  }
 }
