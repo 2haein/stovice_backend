@@ -3,6 +3,7 @@ import Router from 'koa-router';
 import bodyParser from 'koa-bodyparser';
 import mongoose from 'mongoose';
 import Koa from 'koa';
+import cors from 'cors';
 
 // import createFakeData from './createFakeData';
 import serve from 'koa-static';
@@ -37,6 +38,7 @@ router.use('/api', api.routes()); // api 라우트를 /api 경로 하위 라우�
 //   ctx.body = '홈';
 // });
 
+app.use(cors());
 app.use(bodyParser());
 app.use(jwtMiddleware);
 
