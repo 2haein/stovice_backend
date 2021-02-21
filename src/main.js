@@ -3,7 +3,7 @@ import Router from 'koa-router';
 import bodyParser from 'koa-bodyparser';
 import mongoose from 'mongoose';
 import Koa from 'koa';
-import cors from 'cors';
+import cors from '@koa/cors';
 
 // import createFakeData from './createFakeData';
 import serve from 'koa-static';
