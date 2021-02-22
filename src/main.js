@@ -15,12 +15,19 @@ import jwtMiddleware from './lib/jwtMiddleware';
 
 const { PORT, MONGO_URI } = process.env;
 
+const options = {
+  auth: {
+    authSource: 'admin',
+  },
+  user: 'root',
+  pass: 'rootpw',
+  useNewUrlParser: true,
+  useFindAndModify: false,
+  useUnifiedTopology: true,
+};
+
 mongoose
-  .connect(MONGO_URI, {
-    useNewUrlParser: true,
-    useFindAndModify: false,
-    useUnifiedTopology: true,
-  })
+  .connect(MONGO_URI, options)
   .then(() => {
     console.log('Connected to MongoDB');
     // createFakeData();
