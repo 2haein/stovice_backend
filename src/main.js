@@ -47,12 +47,12 @@ router.use('/api', api.routes()); // api 라우트를 /api 경로 하위 라우�
 
 app.use(
   cors({
-    origin: 'http://api.stovice.com',
+    origin: 'https://stovice.com',
     // origin: 'http://13.125.216.198',
     credentials: true,
   }),
 );
-app.use(session({ sameSite: 'none', secure: true }, app));
+
 // app.use(async (ctx, next) => {
 // ctx.set('Access-Control-Allow-Origin', 'http://api.stovice.com');
 // ctx.set('Access-Control-Allow-Credentials', 'true');
