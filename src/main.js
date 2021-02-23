@@ -16,11 +16,11 @@ import jwtMiddleware from './lib/jwtMiddleware';
 const { PORT, MONGO_URI } = process.env;
 
 const options = {
-  auth: {
-    authSource: 'admin',
-  },
-  user: 'root',
-  pass: 'rootpw',
+  // auth: {
+  //   authSource: 'admin',
+  // },
+  // user: 'root',
+  // pass: 'rootpw',
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true,
