@@ -44,7 +44,7 @@ export const register = async (ctx) => {
       httpOnly: true,
       sameSite: 'none',
       secure: true,
-      // domain: '.stovice.com',
+      domain: '.stovice.com',
     });
   } catch (e) {
     ctx.throw(500, e);
@@ -87,7 +87,7 @@ export const login = async (ctx) => {
       httpOnly: true,
       sameSite: 'none',
       secure: true,
-      // domain: '.stovice.com',
+      domain: '.stovice.com',
     });
   } catch (e) {
     ctx.throw(500, e);
