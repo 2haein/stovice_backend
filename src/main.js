@@ -53,7 +53,7 @@ app.use(
 );
 app.use(async (ctx, next) => {
   ctx.set('Access-Control-Allow-Origin', 'http://api.stovice.com');
-  // ctx.set('Access-Control-Allow-Credentials', 'true');
+  ctx.set('Access-Control-Allow-Credentials', 'true');
   ctx.set(
     'Access-Control-Allow-Headers',
     'Origin, X-Requested-With, Content-Type, Accept',
