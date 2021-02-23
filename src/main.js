@@ -4,7 +4,6 @@ import bodyParser from 'koa-bodyparser';
 import mongoose from 'mongoose';
 import Koa from 'koa';
 import cors from '@koa/cors';
-import session from 'koa-session';
 // import createFakeData from './createFakeData';
 import serve from 'koa-static';
 import path from 'path';
