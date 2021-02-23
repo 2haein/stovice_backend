@@ -45,7 +45,12 @@ router.use('/api', api.routes()); // api 라우트를 /api 경로 하위 라우�
 //   ctx.body = '홈';
 // });
 
-app.use(cors());
+app.use(
+  cors({
+    origin: '*',
+    credentials: true,
+  }),
+);
 app.use(async (ctx, next) => {
   ctx.set('Access-Control-Allow-Origin', '*');
   ctx.set('Access-Control-Allow-Credentials', 'true');
