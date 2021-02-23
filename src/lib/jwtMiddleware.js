@@ -21,6 +21,7 @@ const jwtMiddleware = async (ctx, next) => {
         httpOnly: true,
         sameSite: 'none',
         secure: true,
+        domain: '.stovice.com',
       });
     }
 
