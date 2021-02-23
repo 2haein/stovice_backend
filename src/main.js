@@ -46,7 +46,7 @@ app.proxy = true;
 
 app.use(
   cors({
-    origin: 'https://stovice.com',
+    origin: '^(https?://(?:.+.)?stovice.com(?::d{1,5})?)$',
     // origin: 'http://13.125.216.198',
     credentials: true,
   }),
