@@ -47,7 +47,7 @@ router.use('/api', api.routes()); // api 라우트를 /api 경로 하위 라우�
 
 app.use(
   cors({
-    origin: '*',
+    origin: 'http://13.125.216.198',
     credentials: true,
   }),
 );
