@@ -100,7 +100,7 @@ export const check = async (ctx) => {
   if (!user) {
     // 로그인중 아님
     // ctx.status = 401; // Unauthorized
-    return;
+    // return;
   }
   ctx.body = user;
 };
