@@ -52,8 +52,7 @@ app.use(
     credentials: true,
   }),
 );
-
-app.use(session({ sameSite: 'none' }, app));
+app.use(session({ sameSite: 'none', secure: true }, app));
 // app.use(async (ctx, next) => {
 // ctx.set('Access-Control-Allow-Origin', 'http://api.stovice.com');
 // ctx.set('Access-Control-Allow-Credentials', 'true');
