@@ -47,7 +47,7 @@ router.use('/api', api.routes()); // api 라우트를 /api 경로 하위 라우�
 
 app.use(
   cors({
-    origin: 'http://api.stovice.com',
+    origin: 'http://api.stovice.com123',
     credentials: true,
   }),
 );
