@@ -97,9 +97,6 @@ export const login = async (ctx) => {
 */
 export const check = async (ctx) => {
   const { user } = ctx.state;
-  console.log('123');
-  console.log(ctx);
-  console.log(user);
   if (!user) {
     // 로그인중 아님
     ctx.status = 401; // Unauthorized
