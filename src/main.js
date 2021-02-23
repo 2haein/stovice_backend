@@ -39,7 +39,7 @@ const app = new Koa();
 const router = new Router();
 
 router.use('/api', api.routes()); // api 라우트를 /api 경로 하위 라우트로 설정
-// app.proxy = true;
+app.proxy = true;
 // router.get('/', (ctx) => {
 //   ctx.body = '홈';
 // });
