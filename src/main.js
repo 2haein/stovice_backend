@@ -39,21 +39,20 @@ const app = new Koa();
 const router = new Router();
 
 router.use('/api', api.routes()); // api 라우트를 /api 경로 하위 라우트로 설정
+
 app.proxy = true;
-// router.get('/', (ctx) => {
-//   ctx.body = '홈';
-// });
 
 app.use(
   cors({
     origin: 'https://www.stovice.com',
     // origin: 'http://13.125.216.198',
+    // origin: 'http://localhost:3000',
     credentials: true,
   }),
 );
 
 // app.use(async (ctx, next) => {
-// ctx.set('Access-Control-Allow-Origin', 'http://api.stovice.com');
+// ctx.set('Access-Control-Allow-Origin', '*');
 // ctx.set('Access-Control-Allow-Credentials', 'true');
 // ctx.set(
 //   'Access-Control-Allow-Headers',
