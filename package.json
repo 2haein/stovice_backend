@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/2haein/stovice_backend/issues"
   },
-  "homepage": "https://github.com/2haein/stovice_backend#readme",
+  "homepage": "https://github.com/2haein/stovice_backend",
   "dependencies": {
     "@koa/cors": "^3.1.0",
     "bcrypt": "^5.0.0",
